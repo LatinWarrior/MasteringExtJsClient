@@ -2,292 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e48b73ee-0c81-470b-b808-a41129cbac2b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/07.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/08.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/09.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/1x1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/Sans titre-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/_.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/_admin.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/_arrowdown.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/_arrowup.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/_extract.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/_home.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/_rename_.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/a.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/accept.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/accept.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/accuse.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/accuse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/accuse11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/add.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/application_double.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/application_view_gallery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/application_view_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/application_view_list.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/application_view_tile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/application_view_tile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/archive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/attachment.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/back_to_list.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/book_open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/bookmark_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/flags/br.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/briefcase.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/bullet_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/bullet_disk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/bullet_go.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/bullet_picture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/cc.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/cci.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/chart_bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/chart_column.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/chart_line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/chart_organisation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/chart_pie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/chmod.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/close.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/cog.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/cog_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/cog_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/computer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/database_table.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/default.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/default1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/delete.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/disk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/disk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/disk_multiple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/document.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/documents.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/door_in.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/download.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/dvd_link.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/eXtplorer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/editcopy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/editdelete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/email_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/email_attach.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/email_delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/email_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/email_error.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/email_go.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/email_link.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/email_open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/email_open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/email_open_image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/emoticon_evilgrin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/flags/es.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/extract.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/filefind.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/filenew.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/film.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/film_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/film_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/filter_del.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/find.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/flag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/flag_yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/flagged.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/flash.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/folder-drafts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/folder-inbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/folder-junk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/folder-sent.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/folder-trash.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/folder.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/folder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/folder_html.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/folder_new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/folder_user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/fonts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/forward.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/group_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/group_key.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/header.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/help.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/home.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/house.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/html.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/i_attach.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/icoPrint.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/indicator.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/info.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/java_jar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/joomla_x_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/js.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/js.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/key.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/key_go.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/line-bevel.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/log_error.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/logo1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/logout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail2_view.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_attachment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_earth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_exchange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_find.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_forward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_into.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_out.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_preferences.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_server.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_view.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mail_write.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mailbox_empty.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mailbox_full.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mailclose.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mailclose.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/mailopen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/message_down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/message_down_inactive.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/message_up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/message_up_inactive.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/messagebox_warning.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/midi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/money.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/move.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/ms-excel.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/multimedia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/music.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/new_mail.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/new_tab.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/new_window.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/ooo_calc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/ooo_writer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/overlays.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/page_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/page_white_delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/page_white_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/page_white_excel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/page_white_paint.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/page_white_paintbrush.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/pdf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/pdf_icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/pencil.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/pencil.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/photo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/picture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/preview-bottom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/preview-hide.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/preview-right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/preview.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/print.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/printer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/printer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/priority_high.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/priority_low.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/properties.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/publish_x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/real.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/redirect.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/refresh.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/refresh1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/reload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/remove.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/rename.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/reply.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/replyall.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/run.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/save.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/script_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/send.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/setting.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/sitemap_color.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/sound.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/source.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/source_cpp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/source_css.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/source_h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/source_j.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/source_java.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/source_php.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/source_pl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/source_py.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/source_s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/spread.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/src.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/systeminfo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/table_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/tabs.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/tag_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/tar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/tar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/textfield_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/tgz.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/tgz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/tick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/txt.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/txt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/flags/us.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/user_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/user_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/user_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/vcard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/video.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/view.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/wait.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/word.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/world.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/zip.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/authentication/CapsLockTooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/validation/CustomVTypes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/util/Fonts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/util/Glyphs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controller/login/LoginDialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/login/LoginDialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/util/SessionMonitor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/locale/Translation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controller/locale/TranslationController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/util/Util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/_notes/accuse.gif.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/etc/all.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/locale/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/translations/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/locale/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/translations/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/etc/flagIcons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icons/mail/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/translations/locale.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/translations/pt_BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/locale/pt_Br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Application.js" afterPath="$PROJECT_DIR$/app/Application.js" />
     </list>
     <ignored path="MasteringExtJsClient.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -308,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Application.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Application.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.46898264">
+              <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -390,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginDialog.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginDialog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/login/LoginDialog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64220184">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            <state vertical-scroll-proportion="-1.3815789">
+              <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -440,8 +155,8 @@
         <option value="$PROJECT_DIR$/app/controller/login/LoginController.js" />
         <option value="$PROJECT_DIR$/app/controller/login/Login.js" />
         <option value="$PROJECT_DIR$/app/view/login/LoginDialog.js" />
-        <option value="$PROJECT_DIR$/app/Application.js" />
         <option value="$PROJECT_DIR$/app/controller/login/LoginDialog.js" />
+        <option value="$PROJECT_DIR$/app/Application.js" />
       </list>
     </option>
   </component>
@@ -923,18 +638,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Application.js">
+    <entry file="file://$PROJECT_DIR$/app/controller/login/LoginDialog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        <state vertical-scroll-proportion="-1.3815789">
+          <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/login/LoginDialog.js">
+    <entry file="file://$PROJECT_DIR$/app/Application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64220184">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.46898264">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
           <folding />
         </state>
       </provider>

@@ -46,8 +46,8 @@ Ext.define('Packt.Application', {
                 listeners: {
                     afteranimate: function (el, startTime, eOpts) {
                         //console.log('launch');
-                        //Ext.widget('login-dialog');
-                        Ext.create('Packt.controller.login.LoginDialog')
+                        Ext.widget('login-dialog');
+                        //Ext.create('Packt.controller.login.LoginDialog')
                     }
                 }
             });
