@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAM;EACJ,gBAAgB,EAAC,yCAAyC;;AAG5D,GAAG;EACD,gBAAgB,EAAC,yCAAyC;;AAG5D,GAAG;EACD,gBAAgB,EAAC,yCAAyC",
+"sources": ["flagIcons.scss"],
+"names": [],
+"file": "flagIcons.css"
+}
