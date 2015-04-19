@@ -114,8 +114,8 @@ Ext.define('Packt.controller.login.LoginDialog', {
 
         if (formPanel.getForm().isValid()) {
 
-            //Ext.get(login.getEl()).mask("Authenticating... Please wait...",
-            //    'loading');
+            Ext.get(login.getEl()).mask("Authenticating... Please wait...",
+                'loading');
 
             //formPanel.submit({
             //    clientValidation: true,
@@ -161,6 +161,7 @@ Ext.define('Packt.controller.login.LoginDialog', {
                     if (result.success) { // #3
                         login.close(); // #4
                         Ext.create('Packt.view.navigation.MyViewport'); // #5
+                        //Ext.widget('mainviewport');
                     } else {
                         Ext.Msg.show({title:'Fail!',
                             msg: result.msg, // #6
