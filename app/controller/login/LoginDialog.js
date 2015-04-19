@@ -23,13 +23,13 @@ Ext.define('Packt.controller.login.LoginDialog', {
         }
     ],
 
-    views:[
+    views: [
         'login.LoginDialog',
         'navigation.Header',
         'authentication.CapsLockTooltip'
     ],
 
-    init: function(application) {
+    init: function (application) {
 
         var me = this;
 
@@ -54,7 +54,7 @@ Ext.define('Packt.controller.login.LoginDialog', {
         // Putting this in her. Otherwise, it does not work. Stupid thing.
         Ext.apply(Ext.form.field.VTypes, {
             //  vtype validation function
-            customPass: function(val, field) {
+            customPass: function (val, field) {
                 //console.log('customPass called.');
                 return /^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})/.test(val);
             },
@@ -63,43 +63,50 @@ Ext.define('Packt.controller.login.LoginDialog', {
         });
     },
 
-    onButtonClickLogout: function(button, e, options) {
+    onButtonClickLogout: function (button, e, options) {
         Ext.Ajax.request({
 
             url: 'http://localhost:10108/api/authentication/logout', // #1
 
             success: function (conn, response, options, eOpts) {
-                var result = Ext.JSON.decode(conn.responseText, true);
-                if (!result) {
-                    result = {};
-                    result.success = false;
-                    result.msg = conn.responseText;
-                }
+
+                var result = Packt.util.Util.decodeJSON(conn.responseText);
+
+                //var result = Ext.JSON.decode(conn.responseText, true);
+                //
+                //if (!result) {
+                //    result = {};
+                //    result.success = false;
+                //    result.msg = conn.responseText;
+                //}
+
                 if (result.success) { // #3
                     button.up('mainviewport').destroy(); // #4
                     window.location.reload(); // #5
                 }
                 else {
-                    Ext.Msg.show({ // #6
-                        title: 'Error!',
-                        msg: result.msg,
-                        icon: Ext.Msg.ERROR,
-                        buttons: Ext.Msg.OK
-                    });
+                    Packt.util.Util.showErrorMsg(conn.responseText);
+                    //Ext.Msg.show({ // #6
+                    //    title: 'Error!',
+                    //    msg: result.msg,
+                    //    icon: Ext.Msg.ERROR,
+                    //    buttons: Ext.Msg.OK
+                    //});
                 }
             },
             failure: function (conn, response, options, eOpts) {
-                Ext.Msg.show({ // #7
-                    title: 'Error!',
-                    msg: conn.responseText,
-                    icon: Ext.Msg.ERROR,
-                    buttons: Ext.Msg.OK
-                });
+                Packt.util.Util.showErrorMsg(conn.responseText);
+                //Ext.Msg.show({ // #7
+                //    title: 'Error!',
+                //    msg: conn.responseText,
+                //    icon: Ext.Msg.ERROR,
+                //    buttons: Ext.Msg.OK
+                //});
             }
         });
     },
 
-    onButtonClickSubmit: function(button, e, options) {
+    onButtonClickSubmit: function (button, e, options) {
         //console.log('login submit');
 
         debugger;
@@ -126,55 +133,61 @@ Ext.define('Packt.controller.login.LoginDialog', {
             //});
 
             Ext.Ajax.request({
-                url: 'http://localhost:10108/api/authentication',jsonData: {
-                    "userName" : user,
-                    "password" : pass
+                url: 'http://localhost:10108/api/authentication', jsonData: {
+                    "userName": user,
+                    "password": pass
                 },
                 //params: Ext.util.JSON.encode(form.getValues()),
                 //params: {
                 //    user: user,
                 //    password: pass
                 //},
-                failure: function(conn, response, options, eOpts) {
+                failure: function (conn, response, options, eOpts) {
 
                     Ext.get(login.getEl()).unmask();
 
-                    Ext.Msg.show({
-                        title:'Error!',
-                        msg: conn.responseText,
-                        icon: Ext.Msg.ERROR,
-                        buttons: Ext.Msg.OK
-                    });
+                    Packt.util.Util.showErrorMsg(conn.responseText);
+
+                    //Ext.Msg.show({
+                    //    title: 'Error!',
+                    //    msg: conn.responseText,
+                    //    icon: Ext.Msg.ERROR,
+                    //    buttons: Ext.Msg.OK
+                    //});
                 },
-                success: function(conn, response, options, eOpts) {
+                success: function (conn, response, options, eOpts) {
 
                     Ext.get(login.getEl()).unmask();
 
-                    var result = Ext.JSON.decode(conn.responseText, true); // #1
+                    var result = Packt.util.Util.decodeJSON(conn.responseText);
 
-                    if (!result){ // #2
-                        result = {};
-                        result.success = false;
-                        result.msg = conn.responseText;
-                    }
+                    //var result = Ext.JSON.decode(conn.responseText, true); // #1
+                    //
+                    //if (!result) { // #2
+                    //    result = {};
+                    //    result.success = false;
+                    //    result.msg = conn.responseText;
+                    //}
 
                     if (result.success) { // #3
                         login.close(); // #4
                         Ext.create('Packt.view.navigation.MyViewport'); // #5
                         //Ext.widget('mainviewport');
                     } else {
-                        Ext.Msg.show({title:'Fail!',
-                            msg: result.msg, // #6
-                            icon: Ext.Msg.ERROR,
-                            buttons: Ext.Msg.OK
-                        });
+                        Packt.util.Util.showErrorMsg(conn.responseText);
+                        //Ext.Msg.show({
+                        //    title: 'Fail!',
+                        //    msg: result.msg, // #6
+                        //    icon: Ext.Msg.ERROR,
+                        //    buttons: Ext.Msg.OK
+                        //});
                     }
                 }
             });
         }
     },
 
-    onButtonClickCancel: function(button, e, options) {
+    onButtonClickCancel: function (button, e, options) {
         //console.log('login cancel');
         button.up('form').getForm().reset();
     },
@@ -183,7 +196,7 @@ Ext.define('Packt.controller.login.LoginDialog', {
         //if (e.getKey() === e.ENTER) {
         //    this.doLogin();
         //}
-        if (e.getKey() == e.ENTER){
+        if (e.getKey() == e.ENTER) {
             var submitBtn = field.up('form').down('button#submit');
             submitBtn.fireEvent('click', submitBtn, e, options);
         }

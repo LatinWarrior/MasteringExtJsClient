@@ -17,10 +17,10 @@ Ext.define('Packt.view.navigation.Header', {
             html: '<div id="titleHeader">Video Store Manager<span style="font-size:12px;"> - Mastering Ext JS</span></div>'
         },
         {
-            xtype: 'tbfill' // #7
+            xtype: 'tbfill' // #7 or '->',
         },
         {
-            xtype: 'tbseparator' // #8
+            xtype: 'tbseparator' // #8 or '-',
         },
         {
             xtype: 'button', // #9
