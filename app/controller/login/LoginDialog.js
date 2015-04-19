@@ -172,6 +172,7 @@ Ext.define('Packt.controller.login.LoginDialog', {
                     if (result.success) { // #3
                         login.close(); // #4
                         Ext.create('Packt.view.navigation.MyViewport'); // #5
+                        Packt.util.SessionMonitor.start();
                         //Ext.widget('mainviewport');
                     } else {
                         Packt.util.Util.showErrorMsg(conn.responseText);

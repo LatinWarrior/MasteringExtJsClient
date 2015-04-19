@@ -23,7 +23,7 @@ Ext.define('Packt.view.login.LoginDialog', {
         type: 'fit'
     },
     iconCls: 'key',//'fa fa-key fa-lg',
-    title: 'Login',//translations.login,
+    title: translations.login,
     closeAction: 'hide',
     closable: false,
     draggable: false,
@@ -46,12 +46,12 @@ Ext.define('Packt.view.login.LoginDialog', {
         },
         items: [{
             name: 'userName',
-            fieldLabel: 'User Name',//translations.user,
+            fieldLabel: translations.user,
             maxLength: 25
         }, {
             inputType: 'password',
             name: 'password',
-            fieldLabel: 'Password',//translations.password,
+            fieldLabel: translations.password,
             maxLength: 15,
             vtype: 'customPass',
             msgTarget: 'side',
@@ -72,7 +72,7 @@ Ext.define('Packt.view.login.LoginDialog', {
                 xtype: 'button',
                 itemId: 'cancel',
                 iconCls: 'cancel', //'fa fa-times fa-lg',
-                text: 'Cancel' //translations.cancel,
+                text: translations.cancel,
                 //listeners: {
                 //    click: 'onButtonClickCancel'
                 //}
@@ -81,7 +81,7 @@ Ext.define('Packt.view.login.LoginDialog', {
                 formBind: true,
                 itemId: 'submit',
                 iconCls: 'key-go',// 'fa fa-sign-in fa-lg',
-                text: 'Submit'  //translations.submit,
+                text: translations.submit,
                 //listeners: {
                 //    click: 'onButtonClickSubmit'
                 //}

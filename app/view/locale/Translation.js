@@ -9,7 +9,8 @@ Ext.define('Packt.view.locale.Translation',{
     //
     //controller: 'translation',
 
-    xtype: 'translation',
+    //xtype: 'translation',
+    alias: 'widget.translation',
 
     menu: {
         xtype: 'menu',

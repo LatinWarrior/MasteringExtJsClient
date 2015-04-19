@@ -18,6 +18,8 @@ Ext.define('Packt.view.navigation.Header', {
         },
         {
             xtype: 'tbfill' // #7 or '->',
+        },{
+            xtype: 'translation'
         },
         {
             xtype: 'tbseparator' // #8 or '-',
