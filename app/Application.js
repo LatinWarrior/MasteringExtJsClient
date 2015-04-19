@@ -10,7 +10,8 @@ Ext.define('Packt.Application', {
     name: 'Packt',
 
     requires:[
-        'Packt.controller.login.LoginDialog'
+        'Packt.controller.login.LoginDialog',
+        'Packt.controller.locale.TranslationManager'
     ],
 
     //views: [
@@ -19,6 +20,7 @@ Ext.define('Packt.Application', {
 
     controllers:[
         'login.LoginDialog'
+        ,'locale.TranslationManager'
     ],
 
     stores: [
