@@ -16,8 +16,16 @@ Ext.define('Packt.controller.login.LoginDialog', {
         'Packt.util.Fonts'
     ],
 
+    refs: [
+        {
+            ref: 'capslockTooltip',
+            selector: 'capslocktooltip'
+        }
+    ],
+
     views:[
         'login.LoginDialog',
+        'navigation.Header',
         'authentication.CapsLockTooltip'
     ],
 
@@ -37,6 +45,9 @@ Ext.define('Packt.controller.login.LoginDialog', {
             },
             "login-dialog form textfield[name=password]": {
                 keypress: me.onTextFieldKeyPress
+            },
+            "appheader button#logout": {
+                click: me.onButtonClickLogout
             }
         });
 
@@ -52,10 +63,50 @@ Ext.define('Packt.controller.login.LoginDialog', {
         });
     },
 
+    onButtonClickLogout: function(button, e, options) {
+        Ext.Ajax.request({
+
+            url: 'http://localhost:10108/api/authentication/logout', // #1
+
+            success: function (conn, response, options, eOpts) {
+                var result = Ext.JSON.decode(conn.responseText, true);
+                if (!result) {
+                    result = {};
+                    result.success = false;
+                    result.msg = conn.responseText;
+                }
+                if (result.success) { // #3
+                    button.up('mainviewport').destroy(); // #4
+                    window.location.reload(); // #5
+                }
+                else {
+                    Ext.Msg.show({ // #6
+                        title: 'Error!',
+                        msg: result.msg,
+                        icon: Ext.Msg.ERROR,
+                        buttons: Ext.Msg.OK
+                    });
+                }
+            },
+            failure: function (conn, response, options, eOpts) {
+                Ext.Msg.show({ // #7
+                    title: 'Error!',
+                    msg: conn.responseText,
+                    icon: Ext.Msg.ERROR,
+                    buttons: Ext.Msg.OK
+                });
+            }
+        });
+    },
+
     onButtonClickSubmit: function(button, e, options) {
         //console.log('login submit');
-        var formPanel = button.up('form'),
-            login = button.up('login'),
+
+        debugger;
+
+        var me = this,
+            formPanel = button.up('form'),
+            login = button.up('login-dialog'),
             user = formPanel.down('textfield[name=userName]').getValue(),
             pass = formPanel.down('textfield[name=password]').getValue();
 
@@ -63,15 +114,27 @@ Ext.define('Packt.controller.login.LoginDialog', {
 
         if (formPanel.getForm().isValid()) {
 
-            Ext.get(login.getEl()).mask("Authenticating... Please wait...",
-                'loading');
+            //Ext.get(login.getEl()).mask("Authenticating... Please wait...",
+            //    'loading');
+
+            //formPanel.submit({
+            //    clientValidation: true,
+            //    url: 'http://localhost:10108/api/authentication',
+            //    scope: me,
+            //    success: 'onLoginSuccess',
+            //    failure: 'onLoginFailure'
+            //});
 
             Ext.Ajax.request({
-                url: 'http://localhost:10108/api/authentication',
-                params: {
-                    user: user,
-                    password: pass
+                url: 'http://localhost:10108/api/authentication',jsonData: {
+                    "userName" : user,
+                    "password" : pass
                 },
+                //params: Ext.util.JSON.encode(form.getValues()),
+                //params: {
+                //    user: user,
+                //    password: pass
+                //},
                 failure: function(conn, response, options, eOpts) {
 
                     Ext.get(login.getEl()).unmask();
@@ -194,7 +257,15 @@ Ext.define('Packt.controller.login.LoginDialog', {
 
     onLoginFailure: function (form, action) {
 
-        this.getView().unmask();
+        debugger;
+
+        var me = this,
+            formPanel = button.up('form'),
+            login = button.up('login-dialog');
+
+        //Ext.get(login.getEl()).unmask();
+
+        //login.getView().unmask();
 
         console.log(action);
 
@@ -216,11 +287,18 @@ Ext.define('Packt.controller.login.LoginDialog', {
     },
 
     onLoginSuccess: function (form, action) {
-        this.getView().unmask();
-        this.getView().close();
+
+        debugger;
+
+        var me = this,
+            myView = me.getView('login.LoginDialog');
+
+
+        //this.getView().unmask();
+        //this.getView().close();
         console.log('Success');
         //debugger;
-        Ext.create('Packt.view.main.Main');
+        Ext.create('Packt.view.navigation.MyViewport');
         Packt.util.SessionMonitor.start();
     }
 });

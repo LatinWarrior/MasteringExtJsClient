@@ -8,9 +8,9 @@ Ext.define('Packt.view.navigation.MyViewport', {
     alias: 'widget.mainviewport',
 
     requires: [
-        'Packt.view.Header',
-        'Packt.view.menu.Accordion',
-        'Packt.view.main.MainPanel'
+        //'Packt.view.Header',
+        //'Packt.view.menu.Accordion',
+        //'Packt.view.main.MainPanel'
     ],
 
     layout: {
@@ -19,18 +19,21 @@ Ext.define('Packt.view.navigation.MyViewport', {
 
     items: [
         {
-            xtype: 'mainmenu',
+            //xtype: 'mainmenu',
+            xtype: 'container',
             width: 185,
             collapsible: true,
             region: 'west'//,
             //style: 'background-color: #8FB488;'
         },
         {
-            xtype: 'appheader',
+            //xtype: 'appheader',
+            xtype: 'container',
             region: 'north'
         },
         {
-            xtype: 'mainpanel',
+            //xtype: 'mainpanel',
+            xtype: 'container',
             region: 'center'
         },
         {
