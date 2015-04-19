@@ -13,6 +13,7 @@ Ext.define('Packt.controller.login.LoginDialog', {
 
     requires: [
         //'Packt.view.main.Main',
+        'Packt.util.MD5',
         'Packt.view.authentication.CapsLockTooltip',
         'Packt.util.Util',
         'Packt.util.SessionMonitor',
@@ -20,12 +21,15 @@ Ext.define('Packt.controller.login.LoginDialog', {
     ],
 
     init: function(application) {
-        this.control({
+
+        var me = this;
+
+        me.control({
             "login-dialog form button#submit": { // #1
-                click: this.onButtonClickSubmit // #2
+                click: me.onButtonClickSubmit // #2
             },
             "login-dialog form button#cancel": { // #3
-                click: this.onButtonClickCancel // #4
+                click: me.onButtonClickCancel // #4
             }
         });
 
@@ -42,11 +46,28 @@ Ext.define('Packt.controller.login.LoginDialog', {
     },
 
     onButtonClickSubmit: function(button, e, options) {
-        console.log('login submit');
+        //console.log('login submit');
+        var formPanel = button.up('form'),
+            login = button.up('login'),
+            user = formPanel.down('textfield[name=userName]').getValue(),
+            pass = formPanel.down('textfield[name=password]').getValue();
+
+        pass = Packt.util.MD5.encode(pass);
+
+        if (formPanel.getForm().isValid()) {
+            Ext.Ajax.request({
+                url: 'http://localhost:10108/api/authentication',
+                params: {
+                    user: user,
+                    password: pass
+                }
+            });
+        }
     },
 
     onButtonClickCancel: function(button, e, options) {
-        console.log('login cancel');
+        //console.log('login cancel');
+        button.up('form').getForm().reset();
     },
 
     onTextFieldSpecialKey: function (field, e, options) {
