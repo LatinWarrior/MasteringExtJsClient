@@ -7,10 +7,6 @@ Ext.define('Packt.controller.login.LoginDialog', {
 
     alias: 'controller.login-dialog',
 
-    views:[
-        'login.LoginDialog'
-    ],
-
     requires: [
         //'Packt.view.main.Main',
         'Packt.util.MD5',
@@ -18,6 +14,11 @@ Ext.define('Packt.controller.login.LoginDialog', {
         'Packt.util.Util',
         'Packt.util.SessionMonitor',
         'Packt.util.Fonts'
+    ],
+
+    views:[
+        'login.LoginDialog',
+        'authentication.CapsLockTooltip'
     ],
 
     init: function(application) {
@@ -30,6 +31,12 @@ Ext.define('Packt.controller.login.LoginDialog', {
             },
             "login-dialog form button#cancel": { // #3
                 click: me.onButtonClickCancel // #4
+            },
+            "login-dialog form textfield": {
+                specialkey: me.onTextFieldSpecialKey
+            },
+            "login-dialog form textfield[name=password]": {
+                keypress: me.onTextFieldKeyPress
             }
         });
 
@@ -55,11 +62,49 @@ Ext.define('Packt.controller.login.LoginDialog', {
         pass = Packt.util.MD5.encode(pass);
 
         if (formPanel.getForm().isValid()) {
+
+            Ext.get(login.getEl()).mask("Authenticating... Please wait...",
+                'loading');
+
             Ext.Ajax.request({
                 url: 'http://localhost:10108/api/authentication',
                 params: {
                     user: user,
                     password: pass
+                },
+                failure: function(conn, response, options, eOpts) {
+
+                    Ext.get(login.getEl()).unmask();
+
+                    Ext.Msg.show({
+                        title:'Error!',
+                        msg: conn.responseText,
+                        icon: Ext.Msg.ERROR,
+                        buttons: Ext.Msg.OK
+                    });
+                },
+                success: function(conn, response, options, eOpts) {
+
+                    Ext.get(login.getEl()).unmask();
+
+                    var result = Ext.JSON.decode(conn.responseText, true); // #1
+
+                    if (!result){ // #2
+                        result = {};
+                        result.success = false;
+                        result.msg = conn.responseText;
+                    }
+
+                    if (result.success) { // #3
+                        login.close(); // #4
+                        Ext.create('Packt.view.navigation.MyViewport'); // #5
+                    } else {
+                        Ext.Msg.show({title:'Fail!',
+                            msg: result.msg, // #6
+                            icon: Ext.Msg.ERROR,
+                            buttons: Ext.Msg.OK
+                        });
+                    }
                 }
             });
         }
@@ -71,8 +116,12 @@ Ext.define('Packt.controller.login.LoginDialog', {
     },
 
     onTextFieldSpecialKey: function (field, e, options) {
-        if (e.getKey() === e.ENTER) {
-            this.doLogin();
+        //if (e.getKey() === e.ENTER) {
+        //    this.doLogin();
+        //}
+        if (e.getKey() == e.ENTER){
+            var submitBtn = field.up('form').down('button#submit');
+            submitBtn.fireEvent('click', submitBtn, e, options);
         }
     },
 
@@ -84,7 +133,7 @@ Ext.define('Packt.controller.login.LoginDialog', {
         if ((e.shiftKey && charCode >= 97 && charCode <= 122) ||
             (!e.shiftKey && charCode >= 65 && charCode <= 90)) {
             if (me.capslocktooltip === undefined) {
-                me.capslocktooltip = Ext.Create('Packt.view.login.CapsLockTooltip');
+                me.capslocktooltip = Ext.widget('capslocktooltip'); //Ext.Create('Packt.view.authentication.CapsLockTooltip');
             }
             me.capslocktooltip.show();
         } else {

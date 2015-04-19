@@ -24,12 +24,16 @@ Ext.define('Packt.Application', {
     stores: [
         // TODO: add global / shared stores here
     ],
+
+    enableQuickTips: true,
     
     launch: function () {
         // TODO - Launch the application
         console.log('In launch function of Application.js');
 
         var me = this;
+
+        //Ext.tip.QuickTipManager.init();
 
         var task = new Ext.util.DelayedTask(function () {
 

@@ -55,8 +55,8 @@ Ext.define('Packt.view.login.LoginDialog', {
             maxLength: 15,
             vtype: 'customPass',
             msgTarget: 'side',
-            id: 'password'
-            //enableKeyEvents: true,
+            id: 'password',
+            enableKeyEvents: true
             //listeners: {
             //    keypress: 'onTextFieldKeyPress'
             //}
