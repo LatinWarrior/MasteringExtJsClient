@@ -21,45 +21,57 @@ Ext.define('Packt.controller.login.LoginDialog', {
 
     init: function(application) {
         this.control({
-            "login form button#submit": { // #1
+            "login-dialog form button#submit": { // #1
                 click: this.onButtonClickSubmit // #2
             },
-            "login form button#cancel": { // #3
+            "login-dialog form button#cancel": { // #3
                 click: this.onButtonClickCancel // #4
             }
+        });
+
+        // Putting this in her. Otherwise, it does not work. Stupid thing.
+        Ext.apply(Ext.form.field.VTypes, {
+            //  vtype validation function
+            customPass: function(val, field) {
+                //console.log('customPass called.');
+                return /^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})/.test(val);
+            },
+            // vtype Text property: The error text to display when the validation function returns false
+            customPassText: 'Not a valid password.  Length must be at least 6 characters and maximum of 20. Password must contain one digit, one letter lowercase, one letter uppercase, one special symbol @#$% and between 6 and 20 characters.'
         });
     },
 
     onButtonClickSubmit: function(button, e, options) {
-        console.log('login submit'); // #5
-    },
-    onButtonClickCancel: function(button, e, options) {
-        console.log('login cancel'); // #6
+        console.log('login submit');
     },
 
-    //onTextFieldSpecialKey: function (field, e, options) {
-    //    if (e.getKey() === e.ENTER) {
-    //        this.doLogin();
-    //    }
-    //},
-    //
-    //onTextFieldKeyPress: function (field, e, options) {
-    //
-    //    var charCode = e.getCharCode(),
-    //        me = this;
-    //
-    //    if ((e.shiftKey && charCode >= 97 && charCode <= 122) ||
-    //        (!e.shiftKey && charCode >= 65 && charCode <= 90)) {
-    //        if (me.capslocktooltip === undefined) {
-    //            me.capslocktooltip = Ext.Create('Packt.view.login.CapsLockTooltip');
-    //        }
-    //        me.capslocktooltip.show();
-    //    } else {
-    //        if (me.capslocktooltip !== undefined) {
-    //            me.capslocktooltip.hide();
-    //        }
-    //    }
-    //},
+    onButtonClickCancel: function(button, e, options) {
+        console.log('login cancel');
+    },
+
+    onTextFieldSpecialKey: function (field, e, options) {
+        if (e.getKey() === e.ENTER) {
+            this.doLogin();
+        }
+    },
+
+    onTextFieldKeyPress: function (field, e, options) {
+
+        var charCode = e.getCharCode(),
+            me = this;
+
+        if ((e.shiftKey && charCode >= 97 && charCode <= 122) ||
+            (!e.shiftKey && charCode >= 65 && charCode <= 90)) {
+            if (me.capslocktooltip === undefined) {
+                me.capslocktooltip = Ext.Create('Packt.view.login.CapsLockTooltip');
+            }
+            me.capslocktooltip.show();
+        } else {
+            if (me.capslocktooltip !== undefined) {
+                me.capslocktooltip.hide();
+            }
+        }
+    },
 
     //onButtonClickCancel: function (button, e, options) {
     //    //console.log('login cancel');

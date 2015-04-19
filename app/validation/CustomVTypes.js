@@ -2,6 +2,7 @@
 Ext.apply(Ext.form.field.VTypes, {
     //  vtype validation function
     customPass: function(val, field) {
+        console.log('customPass called.');
         return /^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})/.test(val);
     },
     // vtype Text property: The error text to display when the validation function returns false

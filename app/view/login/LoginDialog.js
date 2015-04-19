@@ -22,6 +22,12 @@ Ext.define('Packt.view.login.LoginDialog', {
     layout: {
         type: 'fit'
     },
+    iconCls: 'key',//'fa fa-key fa-lg',
+    title: 'Login',//translations.login,
+    closeAction: 'hide',
+    closable: false,
+    draggable: false,
+    resizable: false,
     items: [{
         xtype: 'form',
         //reference: 'form',
@@ -33,10 +39,10 @@ Ext.define('Packt.view.login.LoginDialog', {
             allowBlank: false,
             vtype: 'alphanum',
             minLength: 3,
-            msgTarget: 'under',
-            listeners: {
-                specialKey: 'onTextFieldSpecialKey'
-            }
+            msgTarget: 'under'
+            //listeners: {
+            //    specialKey: 'onTextFieldSpecialKey'
+            //}
         },
         items: [{
             name: 'userName',
@@ -49,42 +55,37 @@ Ext.define('Packt.view.login.LoginDialog', {
             maxLength: 15,
             vtype: 'customPass',
             msgTarget: 'side',
-            id: 'password',
-            enableKeyEvents: true,
-            listeners: {
-                keypress: 'onTextFieldKeyPress'
-            }
+            id: 'password'
+            //enableKeyEvents: true,
+            //listeners: {
+            //    keypress: 'onTextFieldKeyPress'
+            //}
+        }],
+        dockedItems: [{
+            xtype: 'toolbar',
+            dock: 'bottom',
+            items: [{
+                xtype: 'translation'
+            },{
+                xtype: 'tbfill'
+            }, {
+                xtype: 'button',
+                itemId: 'cancel',
+                iconCls: 'cancel', //'fa fa-times fa-lg',
+                text: 'Cancel' //translations.cancel,
+                //listeners: {
+                //    click: 'onButtonClickCancel'
+                //}
+            }, {
+                xtype: 'button',
+                formBind: true,
+                itemId: 'submit',
+                iconCls: 'key-go',// 'fa fa-sign-in fa-lg',
+                text: 'Submit'  //translations.submit,
+                //listeners: {
+                //    click: 'onButtonClickSubmit'
+                //}
+            }]
         }]
-    }],
-    iconCls: 'key',//'fa fa-key fa-lg',
-    title: 'Login',//translations.login,
-    closeAction: 'hide',
-    closable: false,
-    draggable: false,
-    resizable: false,
-    dockedItems: [{
-        xtype: 'toolbar',
-        dock: 'bottom',
-        items: [{
-            xtype: 'translation'
-        },{
-            xtype: 'tbfill'
-        }, {
-            xtype: 'button',
-            iconCls: 'fa fa-times fa-lg',
-            text: 'Cancel',//translations.cancel,
-            listeners: {
-                click: 'onButtonClickCancel'
-            }
-        }, {
-            xtype: 'button',
-            formBind: true,
-            iconCls: 'fa fa-sign-in fa-lg',
-            text: 'Submit',//translations.submit,
-            listeners: {
-                click: 'onButtonClickSubmit'
-            }
-        }
-        ]
     }]
 });
