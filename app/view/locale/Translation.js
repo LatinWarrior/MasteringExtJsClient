@@ -14,11 +14,11 @@ Ext.define('Packt.view.locale.Translation',{
 
     menu: {
         xtype: 'menu',
-        defaults:{
-            listeners: {
-                click: 'onMenuItemClick'
-            }
-        },
+        //defaults:{
+        //    listeners: {
+        //        click: 'onMenuItemClick'
+        //    }
+        //},
         items:[{
             xtype: 'menuitem',
             iconCls: 'en',

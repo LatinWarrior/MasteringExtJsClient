@@ -8,7 +8,7 @@ Ext.define('Packt.controller.locale.TranslationManager', {
     alias: 'controller.translation',
 
     views: [
-        'Packt.view.locale.Translation'
+        'locale.Translation'
     ],
 
     refs: [
@@ -38,7 +38,7 @@ Ext.define('Packt.controller.locale.TranslationManager', {
 
         //console.log('In onMenuItemClick of TranslationController');
 
-        debugger;
+        //debugger;
 
         var me = this,
             menu = me.getTranslation(); // #9
