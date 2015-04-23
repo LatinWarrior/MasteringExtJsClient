@@ -8,8 +8,8 @@ Ext.define('Packt.view.navigation.MyViewport', {
     alias: 'widget.mainviewport',
 
     requires: [
-        //'Packt.view.Header',
-        //'Packt.view.menu.Accordion',
+        'Packt.view.main.MainPanel',
+        'Packt.view.menu.Accordion'
         //'Packt.view.main.MainPanel'
     ],
 
@@ -19,8 +19,8 @@ Ext.define('Packt.view.navigation.MyViewport', {
 
     items: [
         {
-            //xtype: 'mainmenu',
-            xtype: 'container',
+            xtype: 'mainmenu',
+            //xtype: 'container',
             width: 185,
             collapsible: true,
             region: 'west'//,
@@ -32,8 +32,8 @@ Ext.define('Packt.view.navigation.MyViewport', {
             region: 'north'
         },
         {
-            //xtype: 'mainpanel',
-            xtype: 'container',
+            xtype: 'mainpanel',
+            //xtype: 'container',
             region: 'center'
         },
         {
@@ -41,7 +41,7 @@ Ext.define('Packt.view.navigation.MyViewport', {
             region: 'south',
             height: 30,
             style: 'border-top: 1px solid #4c72a4;',
-            html: '<div id="titleHeader"><center><span style="font-size:10px;">Mastering ExtJS book - Loiane Groner - http://packtpub.com</span></center></div>'
+            html: '<div id="titleHeader"><center><span style="font-size:10px;">Mastering ExtJS book - Luis Blanco - http://packtpub.com</span></center></div>'
         }
     ]
 });

@@ -13,7 +13,8 @@ Ext.define('Packt.controller.login.LoginDialog', {
         'Packt.view.authentication.CapsLockTooltip',
         'Packt.util.Util',
         'Packt.util.SessionMonitor',
-        'Packt.util.Fonts'
+        'Packt.util.Fonts',
+        'Packt.view.navigation.MyViewport'
     ],
 
     refs: [
